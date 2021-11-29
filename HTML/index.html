@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/style.css">
+<link rel="stylesheet" href="../CSS/style.css">
+<script defer src="../JS/app.js"></script>
+</head>
+<body>
+  <div id="container">
+      <div id="title">
+          <h1>Siré Task </h1> 
+        </div>
+        <div id="date">
+            <p id="date-today">Aujourd'hui</p>
+            <p id="date-full">Vendredi 26 novembre 2021</p>
+        </div>
+        <form class="form">
+            <input type="text" id="text" placeholder="add your task baby" >
+            <input type="submit" id="submit" value="add task">
+    </form>
+    <div id="task">
+        <div id="content" >
+        <input type="text" id="text-task" value="Find a new job " readonly>
+        </div>
+        <div id="actions">
+            <button id="task-edit">Edit</button>
+            <button id="task-remove">Delete</button>
+            <button id="task-add">Done</button>
+        </div>
+    </div>
+        
+  </div>  
+</body>
+</html>
