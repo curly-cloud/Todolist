@@ -13,31 +13,37 @@
 <link rel="stylesheet" href="../CSS/style.css">
 <script defer src="../JS/app.js"></script>
 <script defer src="../JS/date.js"></script>
+<script defer src="../JS/task.js"></script>
 </head>
 <body>
-  <div id="container">
-      <div id="title">
-          <h1>Siré Task </h1> 
-        </div>
-        <div id="date">
-            <p id="date-today">Aujourd'hui</p>
-            <p id="date-full"></p>
-        </div>
-        <form class="form">
-            <input type="text" id="text" placeholder="add your task baby" >
-            <input type="submit" id="submit" value="add task">
-    </form>
-    <div id="task">
-        <div id="content" >
-        <input type="text" id="text-task" value="Find a new job " readonly>
-        </div>
-        <div id="actions">
-            <button id="task-edit">Edit</button>
-            <button id="task-remove">Delete</button>
-            <button id="task-add">Done</button>
-        </div>
-    </div>
-        
+    <div id="container">
+        <header>
+            <div id="title">
+                <h1>Siré Task </h1> 
+                </div>
+                <div id="date">
+                    <p id="date-today">Aujourd'hui</p>
+                    <p id="date-full"></p>
+                </div>
+                <form class="form">
+                    <input type="text" id="text" placeholder="add your task baby" >
+                    <input type="submit" id="submit" value="add task">
+                </form>
+        </header>
+        <main>
+            <section id="task-list">
+             <!-- <div id="task">
+                <div id="content" >
+                <input type="text" id="text-task" value="Find a new job " readonly>
+                </div>
+                <div id="actions">
+                    <button id="task-edit">Edit</button>
+                    <button id="task-remove">Delete</button>
+                    <button id="task-add">Done</button>
+                </div> 
+            </div> -->
+        </section>
+    </main> 
   </div>  
 </body>
 </html>

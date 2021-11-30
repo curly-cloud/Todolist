@@ -1,5 +1,3 @@
-
-
 const display = {
 //Display date 
 /* addDateToDOM: function() {

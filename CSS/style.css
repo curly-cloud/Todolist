@@ -94,7 +94,7 @@ input, button{
 #sumbmit:active{
     opacity: 0.6;
 }
-#task{
+.task{
     width: 80%;
    /*  border: white 2px solid; */
     border-radius: 1em;
@@ -108,27 +108,27 @@ input, button{
     font-weight: 400;
 
 }
-#text-task{
+.text-task{
     font-size: 1.3em;
     text-align: center;
     color: rgb(49, 49, 49);
 }
 
-#task-edit, #task-add, #task-remove{
+.task-edit, .task-add, .task-remove{
 padding: 0.5em;
 color: var(--font);
 font-weight: 700;
 box-shadow: 5px 3px 3px rgb(104, 101, 101);
 }
-#task-edit,#task-remove{
+.task-edit,.task-remove{
     margin-right: 5px;
 }
-#task-edit{
+.task-edit{
     background: var(--edit);
 }
-#task-add{
+.task-add{
     background:var(--done);
 }
-#task-remove{
+.task-remove{
     background:var(--delete);
 }
