@@ -8,9 +8,9 @@ const app = {
        // On sélectionne le formulaire
        const form = document.querySelector('.form');
        //on pause un ecouteur d'evenement sur le formulaire     
-     form.addEventListener('submit',task.handleFormSubmit)
-     
-         
+      form.addEventListener('submit',task.handleFormSubmit);
+      /*  //ajout des bouttons
+      task.handleButton();   */ 
     }
     
 }

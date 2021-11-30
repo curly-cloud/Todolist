@@ -32,6 +32,33 @@ handleFormSubmit:function (event) {
       // On sélectionne le formulaire
        const taskList = document.querySelector('#task-list'); 
        taskList.appendChild(taskElement);
-    
-} 
+
+       //ajout des boutons 
+         //1 créer une div avec sa class
+         const taskActions = document.createElement("div");
+         taskActions.classList.add("actions");
+         //2 créer un bouton edit
+         const taskEdit= document.createElement("button");
+         taskEdit.innerHTML="Edit"
+         taskEdit.classList.add("task-edit");
+          //ajout à la div parent 
+          taskActions.appendChild(taskEdit)
+          //2 créer un bouton remove
+         const taskRemove= document.createElement("button");
+         taskRemove.innerHTML="Delete"
+         taskRemove.classList.add("task-remove");
+         taskActions.appendChild(taskRemove);
+         //2 créer un bouton Add
+         const taskAdd= document.createElement("button");
+         taskAdd.innerHTML="Done"
+         taskAdd.classList.add("task-add");
+          //ajout à la div parent 
+          taskActions.appendChild(taskAdd)
+          
+        //ajout à l'élémént parent 
+        taskElement.appendChild(taskActions);
+     
+     //inserrer dans le DOM
+ 
+},
 }
