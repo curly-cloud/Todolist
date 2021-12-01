@@ -82,7 +82,10 @@ handleFormSubmit:function (event) {
                taskActions.removeChild(taskEdit);
           })
 
-
+          // On vide la propriété value du champ
+          input.value = "";
+          //focus sur le champs 
+          input.focus();
 },
 
 }
