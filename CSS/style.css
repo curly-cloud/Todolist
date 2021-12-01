@@ -132,3 +132,18 @@ box-shadow: 5px 3px 3px rgb(104, 101, 101);
 .task-remove{
     background:var(--delete);
 }
+.task-added{
+        width: 80%;
+       /*  border: white 2px solid; */
+        border-radius: 1em;
+        background:green;
+        margin-left: 3rem;
+        padding: 1em;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: space-around;
+        font-weight: 400;
+    
+    
+}

@@ -57,8 +57,32 @@ handleFormSubmit:function (event) {
           
         //ajout à l'élémént parent 
         taskElement.appendChild(taskActions);
-     
-     //inserrer dans le DOM
- 
+          //ecoute edit
+          taskEdit.addEventListener('click', (e)=> {
+               if (taskEdit.innerHTML.toLowerCase()=="edit") {
+                    taskEdit.innerHTML = "Save";
+                    taskInputEl.removeAttribute("readonly");
+                    taskInputEl.focus();   
+                    
+               }else{
+                    taskEdit.innerHTML="Edit";
+                    taskInputElsetAttribute("readonly","readonly");
+               }
+          });
+
+          //ecoute bouton delete 
+          taskRemove.addEventListener('click', ()=> {
+               taskList.removeChild(taskElement)
+          })
+
+          //ecoute bouton add
+          taskAdd.addEventListener('click', ()=> {
+               taskElement.classList= ("task-added");
+               taskActions.removeChild(taskAdd);
+               taskActions.removeChild(taskEdit);
+          })
+
+
 },
+
 }
